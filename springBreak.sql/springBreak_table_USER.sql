@@ -10,7 +10,7 @@ CREATE TABLE `USER` (
   `FirstName` varchar(30) DEFAULT NULL,
   `LastName` varchar(30) DEFAULT NULL,
   `BirthDate` date DEFAULT NULL,
-  `CollegeID` int(11) NOT NULL
+  `CollegeID` int(11),
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -31,7 +31,7 @@ INSERT INTO `USER` (`UserID`, `FirstName`, `LastName`, `BirthDate`, `CollegeID`)
 (11, 'Harlen', 'Gimbrett', '1998-09-16', 10),
 (12, 'Ernie', 'Macrow', '1998-08-22', 9),
 (13, 'Adler', 'MacKimmie', '1997-02-21', 8),
-(14, 'Norris', 'Treweke', '1998-05-25', 0),
+(14, 'Norris', 'Treweke', '1998-05-25'),
 (15, 'Fleming', 'Fittes', '1998-12-02', 6),
 (16, 'Alice', 'Shergill', '1999-04-15', 1),
 (17, 'Jashan', 'Shergill', '1999-04-15', 1),
@@ -40,3 +40,5 @@ INSERT INTO `USER` (`UserID`, `FirstName`, `LastName`, `BirthDate`, `CollegeID`)
 (20, 'Maris', 'Gianelli', '1997-08-30', 3),
 (21, 'Faunie', 'Lathleiff', '1999-05-11', 2),
 (22, 'Allie', 'Lahtleff', '1999-05-11', 7);
+
+-- ---------------------------------------------------------
