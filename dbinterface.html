@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Spring Break Trip Planner</title>
-	<style type="text/css">
-		.container {
-			position: relative;
-    		text-align: center;
-    		color: white;
-		}
-
-		.formContainer {
-			width: 500px;
-			clear: both;
-		}
-
-		.formContainer input {
-			width: 100%;
-			clear: both;
-		}
-
-		.centered {
-			position: absolute;
-    		top: 50%;
-    		left: 50%;
-    		transform: translate(-50%, -50%);
-    		font-size: 59px;
-    		font-family: serif;
-		}
-	</style>
-</head>
-<body style="color: navy;">
-	<div class="container">
-				<img src="https://www.designyourway.net/drb/wp-content/uploads/2015/05/Beach-Wallpaper-Desktop-Background-11.jpg" alt="Beach" style="width: 100%; height: 200px; display: block; margin-left: auto; margin-right: auto;" />
-				<div class="centered">Spring Break Trip Planner</div>
-	</div>
-
-	<form action="tripPicker.html" method="post" class="formContainer">
-
-		<h2>Personal Info</h2>
-
-		<hr align="left" width="100%" color="orange"><br>
-
-		First Name: <input type="text" name="firstName"><br>
-
-		Last Name: <input type="text" name="lastName"><br>
-
-		Date of Birth: <input type="text" name="dob"><br>
-
-		College: <input type="text" name="college"><br>
-
-		Spring Break Start Date: <input type="text" name="startDate"><br>
-
-		<br><hr align="left" width="100%" color="orange"><br>
-		
-		<input type="submit" name="submit" value="Submit">
-	</form>
-</body>
+    <head>
+        <title>Spring Break Trip Planner</title>
+        <style type="text/css">
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+        .formContainer {
+            width: 500px;
+            clear: both;
+        }
+        .formContainer input {
+            width: 100%;
+            clear: both;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 59px;
+            font-family: serif;
+        }
+        </style>
+    </head>
+    <body style="color: navy;">
+        <form action ="mysqli_connect.php" method = "post">
+        <div class="container">
+            <img src="https://www.designyourway.net/drb/wp-content/uploads/2015/05/Beach-Wallpaper-Desktop-Background-11.jpg" alt="Beach" style="width: 100%; height: 200px; display: block; margin-left: auto; margin-right: auto;" />
+            <div class="centered">Spring Break Trip Planner</div>
+        </div>
+        <div class="formContainer">
+            <form action="http://localhost/tripPicker.html" method="post">
+                
+                <h2>Personal Info</h2>
+                
+                <p>First Name:
+                <input type="text" name="firstName" size="30" value="" />
+                </p>
+                
+                <p>Last Name:
+                <input type="text" name="lastName" size="30" value="" />
+                </p>
+                
+                <p>Date of Birth(YYYY-MM-DD):
+                <input type="text" name="dob" size="30" value="" />
+                </p>
+                
+                <p>College:
+                <input type="text" name="college" size="30" value="" />
+                </p>
+                
+                <p>Spring Break Start Date(YYYY-MM-DD):
+                <input type="text" name="startDate" size="30" value="" />
+                </p>
+                
+                <br>
+                <hr align="left" width="100%" color="orange">
+                <br>
+                
+                <p>
+                <input type="submit" name="submit" value="Submit" />
+                </p>
+                
+            </form>
+        </div>
+        </form>
+    </body>
 </html>
