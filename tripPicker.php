@@ -50,7 +50,7 @@
 											WHERE Date = '2019-03-04'");
 
 				while ($row = mysqli_fetch_array($stmt)) {
-					echo "<input type='radio' name='trip' value='trip'/>" . $row['Location'] . " , " . $row['Date'] . " , " .  "$" . $row['Cost'] . "<br>";
+					echo "<input type='radio' name='trip' value='trip' required='required'/>" . $row['Location'] . " , " . $row['Date'] . " , " .  "$" . $row['Cost'] . "<br>";
 				}
 			}
 
@@ -59,7 +59,7 @@
 												WHERE Date = '2019-03-11'");
 
 				while ($row = mysqli_fetch_array($stmt)) {
-					echo "<input type='radio' name='trip' value='trip'/>" . $row['Location'] . " , " . $row['Date'] . " , " .  "$" . $row['Cost'] . "<br>";
+					echo "<input type='radio' name='trip' value='trip' required='required'/>" . $row['Location'] . " , " . $row['Date'] . " , " .  "$" . $row['Cost'] . "<br>";
 				}	
 			}
 
@@ -68,7 +68,7 @@
 											WHERE Date = '2019-03-18'");
 
 				while ($row = mysqli_fetch_array($stmt)) {
-					echo "<input type='radio' name='trip' value='trip'/>" . $row['Location'] . " , " . $row['Date'] . " , " .  "$" . $row['Cost'] . "<br>";
+					echo "<input type='radio' name='trip' value='trip' required='required'/>" . $row['Location'] . " , " . $row['Date'] . " , " .  "$" . $row['Cost'] . "<br>";
 				}
 			} 
 			mysqli_close($dbc);
@@ -79,7 +79,7 @@
 		<hr align="left" width="25%" color="orange">
 
 		<label><input type = "radio"  name = "cardType"  
-                value = "visa"/> 
+                value = "visa" required="required" /> 
                 Visa </label>
          <label><input type = "radio"  name = "cardType"  
                 value = "master card" /> Master Card </label>
